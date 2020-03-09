@@ -56,6 +56,13 @@ namespace StudentExercises {
 
             List<Exercise> exercises = new List<Exercise> { Exercise1, Exercise2, Exercise3, Exercise4 };
 
+            foreach (Student student in students) {
+
+                foreach (Exercise exercise in student.exercises) {
+                    Console.WriteLine ($"{student.FirstName} is working on: {exercise.ExerciseName}");
+                }
+            }
+
         }
     }
 }
